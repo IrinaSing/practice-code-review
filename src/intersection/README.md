@@ -1,14 +1,8 @@
-# Intersection
-
-Write a function that finds all the values shared between two arrays.
-
----
+# Intersection: use 'for' loop and 'if' statement combined with array methods
 
 ## Docstring
 
-Here's a starter docstring for your solutions. Feel free to rewrite it if that helps you understand:
-
-```js
+```JS
 /**
  * Creates an array of values that are in both the first and the second arrays.
  *
@@ -16,19 +10,22 @@ Here's a starter docstring for your solutions. Feel free to rewrite it if that h
  *
  * **Note:** This function returns a new array, and has no side-effects.
  *
- * @param {Array} [array=[]] - The array to inspect.
- * @param {Array} [values=[]] - The values to exclude.
+ * @param {Array} [array = []] - The array to inspect.
+ * @param {Array} [values = []] - The values to exclude.
  * @returns {Array} Returns the new array of filtered values.
- * @example
  *
+ * @example
  * difference([2, 1], [2, 3]);
- * // -> [2]
+ * --> [2]
  *
  * @example
- *
  * difference([2, 1, 2], [2, 3]);
- * // -> [2]
+ * --> [2]
  */
 ```
 
 > Docstring is adapted from [lodash's intersection](https://github.com/lodash/lodash/blob/4.17.15/lodash.js#L7498)
+
+---
+
+
