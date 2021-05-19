@@ -1,0 +1,23 @@
+Wed May 19 2021, 8:00:24 PM
+
+intersection creates an array of values that are in both the first and the second arrays.
+  intersects empty arrays
+    √ PASS: first array is an empty array
+    √ PASS: second array is an empty array
+    √ PASS: both of the arrays are empty arrays
+  intersects different type of elements in the arrays
+    √ PASS: mixed types
+    √ PASS: mixed types
+    √ PASS: mixed types and repeating elements in the first array
+    √ PASS: mixed types and repeating elements in the second array
+  order of the elements matter
+    √ PASS: first array has the least index number in common
+    √ PASS: second array has the least index number in common
+  length of the elements matter
+    √ PASS: first array has a longer length
+    √ PASS: second array has a longer length
+    √ PASS: both arrays have the same length
+  has no side-effects
+    √ PASS: returns a new array
+    √ PASS: does not modify the argument
+

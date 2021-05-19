@@ -23,7 +23,7 @@ export const intersection = (array = [], values = []) => {
   const commonItem = [];
   // loop for the elements of the array to inspect
   for (const item of array) {
-  // look for the matches
+    // look for the matches
     if (values.includes(item)) {
       // add the matches to the empty array
       commonItem.push(item);
