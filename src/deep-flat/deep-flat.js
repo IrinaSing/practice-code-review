@@ -17,20 +17,18 @@
  */
 
 /*
+Strategy
+Create a new array to avoid side-effects;
+Use .flat() method to flatten the old array. As far as we want to flatten array
+of any depth, we specofy 'Infinity' as a parameter.
+Assign result to the newArray.
+Return new array.
  */
 
-export const deepFlat = (array = []) => {
+export const deepFlat = (array = []) => {    
     const newArray = array.flat(Infinity);
+    return newArray;
   };
   
-  export const sortNumbers = (arrOfNumbers = []) => {
-    // create a copy of the argument to avoid side-effects
-    const copiedAndSorted = [...arrOfNumbers];
-  
-    // sort the elements in the copied array
-    copiedAndSorted.sort((a, b) => a - b);
-  
-    // return the copied & sorted array of numbers
-    return copiedAndSorted;
-  };
+
   

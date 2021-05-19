@@ -52,7 +52,7 @@ describe("flattens arrays with different levels of depths", () => {
       expect(received).toEqual(expected);
     });
     it("array with different types of items", () => {
-      const expected = [null, false, 0, NaN, "e"];
+      const expected = [true, null, false, 0, NaN, "e"];
       const received = deepFlat([true, [null, [false]], 0, NaN, "e"]);
       expect(received).toEqual(expected);
     });
