@@ -30,6 +30,18 @@
 
 ## Strategy
 
-I chose to use 'for' loop and 'if' statement combined with array methods to solve this challenge, because it is easy to read the code.
+'for' loop and 'if' statement combined with array methods to solve this challenge is used.
 
+## Implementation
+
+To find the intersection of two arrays - the common elements in each array - first an empty array is declared.
+
+Then by using 'for/of' loop, every element of the first array is inspected. Then 'if' statement and 'includes()' built-in method is used in the 'for' loop to check for the elements that second array has in common. And then the result is added to the empty array by using 'push()' built-in method.
+
+This will return an array of common elements in both of the arrays, but it is also returns the repeated values.
+
+To have an array with unique values, the resulting array is first converted to a set by using "new Set()' method. Then it is reconverted to an array by using 'Array.from()' built-in method.
+## Use Cases
+
+## Inspiration
 
