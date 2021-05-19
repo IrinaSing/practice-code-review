@@ -28,4 +28,8 @@
 
 ---
 
+## Strategy
+
+I chose to use 'for' loop and 'if' statement combined with array methods to solve this challenge, because it is easy to read the code.
+
 
