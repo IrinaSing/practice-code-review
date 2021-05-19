@@ -27,5 +27,8 @@
     "expect": "^26.6.2",
     "jsdoc-to-markdown": "^6.0.1",
     "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "lint": "^0.7.0"
   }
 }
