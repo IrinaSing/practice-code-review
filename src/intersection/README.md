@@ -41,7 +41,17 @@ Then by using 'for/of' loop, every element of the first array is inspected. Then
 This will return an array of common elements in both of the arrays, but it is also returns the repeated values.
 
 To have an array with unique values, the resulting array is first converted to a set by using "new Set()' method. Then it is reconverted to an array by using 'Array.from()' built-in method.
+
 ## Use Cases
+
+This function can be used for finding the common friends of two people and suggesting their friends if they want to be friends with these common friends.
+
+```JS
+const user1 = ['Arthur', 'Liam', 'Louise'];
+const user2 = ['Louise', 'Lucas', 'Oscar'];
+
+const commonFriends = intersection (user1, user2);
+```
 
 ## Inspiration
 
