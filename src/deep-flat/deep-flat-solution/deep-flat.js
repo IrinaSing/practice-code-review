@@ -16,15 +16,6 @@
  * // -> ['a', 'b', 'c', 'd', 'e']
  */
 
-/*
-Strategy
-Create a new array to avoid side-effects;
-Use .flat() method to flatten the old array. As far as we want to flatten array
-of any depth, we specify 'Infinity' as a parameter.
-Assign result to the newArray.
-Return new array.
- */
-
 export const deepFlat = (array = []) => {
   const newArray = array.flat(Infinity);
   return newArray;
