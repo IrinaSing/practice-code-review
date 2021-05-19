@@ -1,7 +1,7 @@
 /**
- * Converts a nested array into a single array with no nesting
- *
- * It returns a new array and there are no side-effects
+ * Converts a nested array into a single array with no nesting.
+ * Flattens array with any depth.
+ * Returns a new array and there are no side-effects.
  *
  * @param {Array} [array=[]] - The array to flatten.
  * @returns {Array} Returns the new flattened array.
