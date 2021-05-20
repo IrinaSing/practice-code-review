@@ -1,4 +1,4 @@
-# Intersection: use 'for' loop and 'if' statement combined with array methods
+# Intersection: use 'for/of' loop and 'if' statement combined with array methods
 
 <!-- BEGIN DOCS -->
 
