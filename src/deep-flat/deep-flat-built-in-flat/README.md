@@ -56,9 +56,9 @@ To use a built-in array method that flattens array of any depth. It's a short so
 
 ```js
 const forBob = [["bananas", "melon"], ["tea"]];
-const foeJane = [["tomatoes", "cucumber"], ["cola"], ["snack"]];
+const forJane = [["tomatoes", "cucumber"], ["cola"], ["snack"]];
 const forMary = [["milk"], ["apples"]];
-const shopList = [forBob, foeJane, forMary];
+const shopList = [forBob, forJane, forMary];
 
 console.log(deepFlat(shopList)); // ["bananas", "melon", "tea", "tomatoes", "cucumber", "cola", "snack", "milk", "apples"]
 ```
