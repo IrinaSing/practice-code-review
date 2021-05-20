@@ -30,7 +30,7 @@ deepFlat(["a", ["b", [["c"], ["d"]], "e"]]);
 // -> ['a', 'b', 'c', 'd', 'e']
 ```
 
-> Docs generated: Thu May 20 2021, 9:14:18 PM
+> Docs generated: Thu May 20 2021, 9:41:14 PM
 
 <!-- END DOCS -->
 
