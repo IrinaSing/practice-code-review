@@ -32,7 +32,7 @@ intersection([2, 1], [2, 3])-- > [2];
 intersection([2, 1, 2], [2, 3])-- > [2];
 ```
 
-> Docs generated: Wed May 19 2021, 9:22:48 PM
+> Docs generated: Thu May 20 2021, 11:07:25 PM
 
 <!-- END DOCS -->
 

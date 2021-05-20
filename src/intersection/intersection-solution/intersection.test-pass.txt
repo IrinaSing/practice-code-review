@@ -1,4 +1,4 @@
-Thu May 20 2021, 5:16:48 PM
+Thu May 20 2021, 11:06:49 PM
 
 intersection creates an array of values that are in both the first and the second arrays.
   intersects empty arrays
