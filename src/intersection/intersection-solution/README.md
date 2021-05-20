@@ -66,4 +66,5 @@ const commonFriends = intersection (user1, user2);
 ## Inspiration
 
 [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) inspired me about the repeating values.
+
 [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from) inspired me about converting a set to an array.
