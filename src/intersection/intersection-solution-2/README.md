@@ -30,7 +30,8 @@ filter() built-in method is used.
 
 ## Implementation
 
-- 
+- Singularize and copy the arrays for the unique elements by using '[...arr]' and 'new Set()' methods
+- Search for the common elements by using filter() and includes() methods
 
 ## Use Cases
 
