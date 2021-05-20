@@ -10,7 +10,7 @@ Converts a nested array into a single array with no nesting.
 Flattens array with any depth.
 Returns a new array and there are no side-effects.
 
-**Returns**: <code>Array</code> - Returns the new flattened array.
+**Returns**: <code>Array</code> - - The new flattened array.
 
 | Param   | Type               | Default         | Description           |
 | ------- | ------------------ | --------------- | --------------------- |
@@ -30,7 +30,7 @@ deepFlat(["a", ["b", [["c"], ["d"]], "e"]]);
 // -> ['a', 'b', 'c', 'd', 'e']
 ```
 
-> Docs generated: Wed May 19 2021, 8:28:48 PM
+> Docs generated: Thu May 20 2021, 9:14:18 PM
 
 <!-- END DOCS -->
 
@@ -38,7 +38,7 @@ deepFlat(["a", ["b", [["c"], ["d"]], "e"]]);
 
 ## Strategy
 
-To use a method that flattens array of any depth.
+To use a built-in array method that flattens array of any depth. It's a short solution of the challenge.
 
 ---
 
@@ -53,6 +53,15 @@ To use a method that flattens array of any depth.
 ---
 
 ## Use Cases
+
+```js
+const forBob = [["bananas", "melon"], ["tea"]];
+const foeJane = [["tomatoes", "cucumber"], ["cola"], ["snack"]];
+const forMary = [["milk"], ["apples"]];
+const shopList = [forBob, foeJane, forMary];
+
+console.log(deepFlat(shopList)); // ["bananas", "melon", "tea", "tomatoes", "cucumber", "cola", "snack", "milk", "apples"]
+```
 
 ---
 
