@@ -1,6 +1,5 @@
 # Intersection: use 'for' loop and 'if' statement combined with array methods
 
-
 <!-- BEGIN DOCS -->
 
 <a name="intersection"></a>
@@ -41,17 +40,17 @@ intersection([2, 1, 2], [2, 3])-- > [2];
 
 ## Strategy
 
-'for' loop and 'if' statement combined with array methods
+'for/of' loop and 'if' statement combined with array methods
 
 ## Implementation
 
-To find the intersection of two arrays - the common elements in each array - first an empty array is declared.
+- To find the intersection of two arrays - the common elements in each array - an empty array is declared.
 
-Then by using 'for/of' loop, every element of the first array is inspected. Then 'if' statement and 'includes()' built-in method is used in the 'for' loop to check for the elements that second array has in common. And then the result is added to the empty array by using 'push()' built-in method.
+- By using 'for/of' loop, every element of the first array is inspected. Then 'if' statement and 'includes()' method is used in the loop to check for the elements that second array has in common. And then the result is added to the empty array by using 'push()' method.
 
-This will return an array of common elements in both of the arrays, but it is also returns the repeated values.
+- This will return an array of common elements which are in both of the arrays, but it also returns the repeated values.
 
-To have an array with unique values, the resulting array is first converted to a set by using "new Set()' method. Then it is reconverted to an array by using 'Array.from()' built-in method.
+- To have an array with unique values, the resulting array is first converted to a set by using "new Set()' method. Then it is reconverted to an array by using 'Array.from()' method.
 
 ## Use Cases
 
@@ -66,4 +65,5 @@ const commonFriends = intersection (user1, user2);
 
 ## Inspiration
 
-
+[MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) inspired me about the repeating values.
+[MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from) inspired me about converting a set to an array.
