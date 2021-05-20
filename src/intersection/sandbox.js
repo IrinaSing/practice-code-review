@@ -15,3 +15,8 @@ console.log(intersection(["a", null, 1, Infinity], [1, 2, "a"]));
 
 console.log(intersection([1, 2, 3], [2, 3, 4]));
 // [2, 3]
+
+console.log(
+  intersection(["Antwerp", "Brussels", "Ghent"], ["Liege", "Mons", "Brussels"])
+);
+// ["Brussels"]
