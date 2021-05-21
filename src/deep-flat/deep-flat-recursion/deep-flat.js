@@ -19,15 +19,14 @@
 export const deepFlat = (array = []) => {
   // Create a new array to avoid side-effects.
   const flattened = [];
-  // Iterate through the original array.
+  // Iterate through elements of the original array.
   array.forEach((el) => {
-    // Create a recursion and push elements to the new array once they fit requirements.
-    // Check element for being an array.
+    // Create a recursion and check element for being an array.
     if (Array.isArray(el)) {
-      // Using the spread operator to push the result of the recursive call into our result array.
+      // Grab result of the recursive call into our result array.
       flattened.push(...deepFlat(el));
     } else {
-      // Push element into result array if it is not an array.
+      // Push element (it is not an array) into result array.
       flattened.push(el);
     }
   });
