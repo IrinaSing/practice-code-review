@@ -2,6 +2,36 @@
 
 <!-- BEGIN DOCS -->
 
+<a name="deepFlat"></a>
+
+## deepFlat ⇒ <code>Array</code>
+
+Converts a nested array into a single array with no nesting.
+Flattens array with any depth.
+Returns a new array and there are no side-effects.
+
+**Returns**: <code>Array</code> - - The new flattened array.
+
+| Param   | Type               | Default         | Description           |
+| ------- | ------------------ | --------------- | --------------------- |
+| [array] | <code>Array</code> | <code>[]</code> | The array to flatten. |
+
+**Example**
+
+```js
+deepFlat([1, [2, [3, [4]], 5]]);
+// -> [1, 2, 3, 4, 5]
+```
+
+**Example**
+
+```js
+deepFlat(["a", ["b", [["c"], ["d"]], "e"]]);
+// -> ['a', 'b', 'c', 'd', 'e']
+```
+
+> Docs generated: Fri May 21 2021, 3:59:42 PM
+
 <!-- END DOCS -->
 
 ---
