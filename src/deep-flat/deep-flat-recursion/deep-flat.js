@@ -19,9 +19,9 @@
 export const deepFlat = (array = []) => {
   // Create a new array to avoid side-effects.
   const flattened = [];
-  // Use .forEach to iterate through the original array.
+  // Iterate through the original array.
   array.forEach((el) => {
-    // Use control flow to create a recursion and push elements to the new array.
+    // Create a recursion and push elements to the new array once they fit requirements.
     // Check element for being an array.
     if (Array.isArray(el)) {
       // Using the spread operator to push the result of the recursive call into our result array.
