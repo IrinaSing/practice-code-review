@@ -58,8 +58,7 @@ Before the reviewer merges this PR to main/master, all of these boxes must be ch
   - [ ] Variables have names that help understand the strategy
   - [ ] Spacing and formatting help to understand the strategy
   - [ ] The code is written as simply and clearly as possible
-  - [ ] Comments _are_ used to label important goals in your strategy
-  - [ ] Comments _are not_ used to describe how the code works
+  - [ ] Use short, clear comments to describe the strategy
 - **README**
   - [ ] There is an explanation of the solution's strategy in the README
   - [ ] The explanation is clear and understandable
@@ -85,10 +84,8 @@ Before the reviewer merges this PR to main/master, all of these boxes must be ch
   - [ ] Have clear and helpful variable names
   - [ ] Declare variables in the smallest scope possible
   - [ ] Be a simple and readable implementation
-  - [ ] Use short comments to describe the strategy
-  - [ ] Use short comments to describe important language feature choices
 - **The function body should _Not_ ...**
-  - [ ] Have extra comments that are not about strategy or important decisions
+  - [ ] Have extra comments that are not about the solution's strategy
   - [ ] Have any user interactions (`prompt`, `alert`, `confirm`)
   - [ ] Have any `console` calls (`.log`, `.assert`, ...)
   - [ ] Have any `debugger` statements

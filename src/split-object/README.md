@@ -22,6 +22,11 @@ Here's a starter docstring for your solutions. Feel free to rewrite it if that h
  *
  * @example
  *
+ * splitObject({ name: 'robs', age: 25, tall: true, userName: 'sbor' });
+ * // -> [{ name: 'robs }, { age: 25 }, { tall: true }, { userName: 'sbor' }]
+ *
+ * @example
+ *
  * splitObject({});
  * // -> []
  */

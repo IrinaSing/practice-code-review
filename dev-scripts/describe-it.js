@@ -82,12 +82,9 @@ export const describeIt = (reporter, errors = [], status = {}) => {
         // prevent user-defined console output for simpler and cleaner reports
         //  they can always debug single files
         const consoleBackup = Object.assign({}, console);
-        const consoleCalls = [];
         for (let key in console) {
           if (typeof console[key] === 'function') {
-            console[key] = (...args) => {
-              consoleCalls.push({ method: key, args: Array.from(args) });
-            };
+            console[key] = () => {};
           }
         }
 

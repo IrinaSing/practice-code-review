@@ -20,7 +20,7 @@ export const sortNumbers = (arrOfNumbers = []) => {
   // create a copy of the argument to avoid side-effects
   const copiedAndSorted = [...arrOfNumbers];
 
-  // sort the elements in the copied array
+  // sort the copy according to
   copiedAndSorted.sort((a, b) => a - b);
 
   // return the copied & sorted array of numbers
