@@ -19,7 +19,9 @@
  */
 
 export const intersection = (array = [], values = []) => {
+  // converting the array and values to avoid duplicated elements
   const arraySingular = [...new Set(array)];
   const valuesSingular = [...new Set(values)];
+  // getting the common elements
   return arraySingular.filter((element) => valuesSingular.includes(element));
 };
