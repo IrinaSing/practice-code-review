@@ -1,4 +1,4 @@
-Fri May 21 2021, 4:11:33 PM
+Fri May 21 2021, 4:27:21 PM
 
 flattens arrays with different levels of depths
   default value, array with 1 level of depth

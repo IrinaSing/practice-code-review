@@ -21,7 +21,8 @@ export const deepFlat = (array = []) => {
   const flattened = [];
   // Iterate through elements of the original array.
   array.forEach((el) => {
-    // Create a recursion and check element for being an array.
+    // Create a recursion and check element for being an array to
+    // push it to the result array or to call the recursion.
     if (Array.isArray(el)) {
       // Grab result of the recursive call into our result array.
       flattened.push(...deepFlat(el));
