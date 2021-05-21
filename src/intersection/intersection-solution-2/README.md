@@ -1,27 +1,41 @@
 # Intersection: use built-in methods
 
+<!-- BEGIN DOCS -->
+
+<a name="intersection"></a>
+
+## intersection ⇒ <code>Array</code>
+
+Creates an array of values that are in both the first and the second arrays.
+
+Repeated values are not duplicated in the return value,
+and the order of result values are determined by the first array.
+
+**Note:** This function returns a new array, and has no side-effects.
+
+**Returns**: <code>Array</code> - Returns the new array of filtered values.
+
+| Param    | Type               | Default         | Description            |
+| -------- | ------------------ | --------------- | ---------------------- |
+| [array]  | <code>Array</code> | <code>[]</code> | The array to inspect.  |
+| [values] | <code>Array</code> | <code>[]</code> | The values to exclude. |
+
+**Example**
+
 ```js
-/**
- * Creates an array of values that are in both the first and the second arrays.
- *
- * Repeated values are not duplicated in the return value, and the order of result values are determined by the first array.
- *
- * **Note:** This function returns a new array, and has no side-effects.
- *
- * @param {Array} [array=[]] - The array to inspect.
- * @param {Array} [values=[]] - The values to exclude.
- * @returns {Array} Returns the new array of filtered values.
- * @example
- *
- * difference([2, 1], [2, 3]);
- * // -> [2]
- *
- * @example
- *
- * difference([2, 1, 2], [2, 3]);
- * // -> [2]
- */
+intersection([2, 1], [2, 3])-- > [2];
 ```
+
+**Example**
+
+```js
+intersection([2, 1, 2], [2, 3])-- > [2];
+```
+
+> Docs generated: Fri May 21 2021, 4:55:10 PM
+
+<!-- END DOCS -->
+
 ---
 
 ## Strategy
@@ -31,7 +45,7 @@ filter() built-in method is used.
 ## Implementation
 
 - Singularize and copy the arrays for the unique elements by using '[...arr]' and 'new Set()' methods
-- Search for the common elements by using filter() and includes() methods
+- Search for the common elements by using 'filter()' and 'includes()' methods
 
 ## Use Cases
 
