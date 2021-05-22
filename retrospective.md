@@ -47,10 +47,10 @@
   what cool things or general lessons has your team learned?
   This can be about anything! code, collaboration, git, github, Belgian history, ...
 -->
-We learned how to use scripts for:
+#### We learned how to use scripts for:
 - linting files;
 - formating files;
 - documenting files (jsDoc to markdown);
 - checking unit tests.
 
-We learned to check other people's code according to specific criteria.
+#### We learned to check other people's code according to specific criteria.
