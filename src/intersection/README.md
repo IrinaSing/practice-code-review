@@ -17,7 +17,7 @@ Here's a starter docstring for your solutions. Feel free to rewrite it if that h
  * **Note:** This function returns a new array, and has no side-effects.
  *
  * @param {Array} [array=[]] - The array to inspect.
- * @param {Array} [values=[]] - The values to exclude.
+ * @param {Array} [values=[]] - The values to compare with the array.
  * @returns {Array} Returns the new array of filtered values.
  * @example
  *
