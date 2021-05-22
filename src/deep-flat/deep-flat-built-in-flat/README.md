@@ -54,6 +54,10 @@ To use a built-in array method that flattens array of any depth. It's a short so
 
 ## Use Cases
 
+This function could be used in a shopping list application. When a user who is going
+shopping for grocery receives lists from every family member, the program integrates
+items into global shopping list.
+
 ```js
 const forBob = [["bananas", "melon"], ["tea"]];
 const forJane = [["tomatoes", "cucumber"], ["cola"], ["snack"]];
