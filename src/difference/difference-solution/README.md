@@ -25,13 +25,13 @@ and the order of result values are determined by the first array.
 **Example**
 
 ```js
-difference([2, 1], [2, 3]); //  [1]
+removeItems([2, 1], [2, 3]); //  [1]
 ```
 
 **Example**
 
 ```js
-difference([1, 2, 1], [2, 3]); //  [1]
+removeItems([1, 2, 1], [2, 3]); //  [1]
 ```
 
 > Docs generated: Thu May 20 2021, 6:15:23 PM
@@ -53,8 +53,9 @@ I prefer to use array filter to remove specific items of the array.
 
 ## Use Cases
 
----
 
+---
+This function can be used for everywhere that you want find to difference between two array.
 ```js
 const arr1 = [2, 3, 4, 5];
 const arr2 = [3, 4, 6, 8];

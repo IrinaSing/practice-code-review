@@ -24,6 +24,8 @@ export const removeItems = (array = [], values = []) => {
   const newArray = []; // I describe newArray to avoid side-effects
 
   array.forEach((el) => {
+    // The forEach() method executes a provided function once for each array element.
+
     if (!values.includes(el)) {
       if (!newArray.includes(el)) {
         newArray.push(el);
