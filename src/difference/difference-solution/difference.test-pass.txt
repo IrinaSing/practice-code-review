@@ -1,0 +1,23 @@
+Fri May 21 2021, 12:59:38 PM
+
+removes specific values from an array
+  removes positive numbers
+    √ PASS: whole numbers
+    √ PASS: repeated values
+    √ PASS: decimal numbers
+    √ PASS: mixed whole and decimal numbers
+  numbers and string values
+    √ PASS: only string values
+    √ PASS: mix values string and numbers
+  null,empty and undefine values
+    √ PASS: empty values in second array
+    √ PASS: null value
+    √ PASS: undefined value
+  removes negative numbers
+    √ PASS: whole numbers
+    √ PASS: decimal numbers
+    √ PASS: mixed whole and decimal numbers
+  has no side-effects
+    √ PASS: returns a new array
+    √ PASS: does not modify the argument
+
