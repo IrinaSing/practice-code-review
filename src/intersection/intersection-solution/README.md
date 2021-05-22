@@ -15,10 +15,10 @@ and the order of result values are determined by the first array.
 
 **Returns**: <code>Array</code> - Returns the new array of filtered values.
 
-| Param    | Type               | Default         | Description            |
-| -------- | ------------------ | --------------- | ---------------------- |
-| [array]  | <code>Array</code> | <code>[]</code> | The array to inspect.  |
-| [values] | <code>Array</code> | <code>[]</code> | The values to exclude. |
+| Param    | Type               | Default         | Description                           |
+| -------- | ------------------ | --------------- | ------------------------------------- |
+| [array]  | <code>Array</code> | <code>[]</code> | The array to inspect.                 |
+| [values] | <code>Array</code> | <code>[]</code> | The values to compare with the array. |
 
 **Example**
 
@@ -32,7 +32,7 @@ intersection([2, 1], [2, 3])-- > [2];
 intersection([2, 1, 2], [2, 3])-- > [2];
 ```
 
-> Docs generated: Thu May 20 2021, 11:07:25 PM
+> Docs generated: Sat May 22 2021, 10:44:05 AM
 
 <!-- END DOCS -->
 
