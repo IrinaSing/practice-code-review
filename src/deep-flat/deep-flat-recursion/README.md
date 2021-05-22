@@ -1,4 +1,4 @@
-# Deep-flat: use a built-in array method
+# Deep-flat: recursion
 
 <!-- BEGIN DOCS -->
 
@@ -30,7 +30,7 @@ deepFlat(["a", ["b", [["c"], ["d"]], "e"]]);
 // -> ['a', 'b', 'c', 'd', 'e']
 ```
 
-> Docs generated: Sat May 22 2021, 12:17:02 PM
+> Docs generated: Fri May 21 2021, 4:11:21 PM
 
 <!-- END DOCS -->
 
@@ -38,25 +38,16 @@ deepFlat(["a", ["b", [["c"], ["d"]], "e"]]);
 
 ## Strategy
 
-To use a built-in array method that flattens array of any depth. It's a short solution of the challenge.
-
----
+The method of recursion is very effective for this challenge, because it flattens an array of any depth.
 
 ## Implementation
 
-- Create a new array to avoid side-effects.
-- Use `Array.flat()` method to flatten the old array. As far as we want to flatten array
-  of any depth, we specify 'Infinity' as a parameter.
-- Assign result to the newArray.
-- Return the new array.
-
----
+- `Array.forEach` - method executes a provided function once for each array element.
+- `if-else loop` - with condition `Array.isArray` checks if the element of the array is an array. If yes - it recuresively calls the function (until it will come across content that is not an array). The result of this recursive call will eventually be pushed to the result array.
+- `(...arr)` - spread operator allows us to grab all the elements within the array element (el) (sins it is an array too) and place them into our first function call’s result array. If we tried to do this without the spread operator, we’d end up with another nested array.
+- `.push` - method that places element into new array.
 
 ## Use Cases
-
-This function could be used in a shopping list application. When a user who is going
-shopping for grocery receives lists from every family member, the program integrates
-items into global shopping list.
 
 ```js
 const forBob = [["bananas", "melon"], ["tea"]];
@@ -71,9 +62,7 @@ console.log(deepFlat(shopList)); // ["bananas", "melon", "tea", "tomatoes", "cuc
 
 ## Inspiration
 
-- [Array.flat();](https://www.samanthaming.com/tidbits/71-how-to-flatten-array-using-array-flat/)
-
-- [Determine depth of array](https://codegolf.stackexchange.com/questions/71476/determine-the-depth-of-an-array)
+[Flatten array with recursion](https://medium.com/@mccarthyd/what-happens-when-you-flatten-an-array-using-recursion-da2954deece9)
 
 <!--
   was there any code, blog post, video, ... that inspired your solution?

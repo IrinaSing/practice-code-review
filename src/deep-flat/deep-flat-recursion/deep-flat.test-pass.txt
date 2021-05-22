@@ -1,0 +1,24 @@
+Fri May 21 2021, 4:27:21 PM
+
+flattens arrays with different levels of depths
+  default value, array with 1 level of depth
+    √ PASS: default value
+    √ PASS: array with numbers
+    √ PASS: array with strings
+    √ PASS: array with different types of items
+  flattens array with 2 levels of depth
+    √ PASS: array with numbers
+    √ PASS: array with strings
+    √ PASS: array with different types of items
+  flattens array with 3 levels of depth
+    √ PASS: array with numbers
+    √ PASS: array with strings
+    √ PASS: array with different types of items
+  flattens array with 3 > levels of depth
+    √ PASS: array with numbers
+    √ PASS: array with strings
+  removes empty slot
+    √ PASS: array with numbers
+  There should be no side-effects
+    √ PASS: no side-effects
+
